@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form onsubmit="saveapi(event)">
+        <label>choose expense</label>
+        <input type="number" name="expense" id="amount">
+        <label>choose desc</label>
+        <input type="text" name="desc" id="details">
+        <select name="category" id="cat">
+            <option></option>
+            <option>fuel</option>
+            <option>food</option>
+            <option>rent</option>
+        </select>
+        <button type="submit">Add expense</button>
+     </form>
+     
+     <ul id="listofuser">
+        
+     </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+    <script src="expense.js"></script>
+</body>
+</html>
